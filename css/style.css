@@ -226,85 +226,140 @@ body{
 }
 
 /* testimonial section starts */
-.testimonial img:hover{
-    transform: scale(1.2,1.2);
-    transition-duration: 1s;
-}
-.testimonial h4{
-    color: #3f396d;
-}
-.testimonial i{
-    font-size: 2.9rem;
-    color: #fca61f;
-    
-}
-.testimonial .nextprev-btn{
-    border: none;
-    background-color: #fff;
-}
-.prev:hover,.prev-btn:hover{
-    color:#6f34fe;
-    transform: translateX(-10px);
-    transition-duration: 1s;
-}
-.next:hover,.next-btn:hover{
-    color:#6f34fe;
-    transform: translateX(10px);
-    transition-duration: 1s;
-}
+/* General Section Styling */
+.education {
+    background-color: #f9f9f9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .education .heading {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .education .heading small {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c757d;
+  }
+  
+  .education .heading h3 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* College Card Styling */
+  .college-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .college-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .college-card .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .college-card .card-body {
+    padding: 20px;
+  }
+  
+  .college-card .college-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .college-card .college-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 767px) {
+    .education .row {
+      justify-content: center;
+    }
+  
+    .college-card {
+      margin-bottom: 20px;
+    }
+  }
+  
 
 /* blog section starts */
-.blog{
-    background-color: #f2f2ff;
-}
-.blog .blogpost .card{
+/* Custom CSS for Achievement Section */
+.achievement .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .achievement .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .achievement .card-img-top {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .achievement .card-body {
+    padding: 1.5rem;
+  }
+  
+  .achievement .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .achievement .read-more-btn {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    color: #007bff;
+  }
+  
+  .achievement .modal-content {
+    border-radius: 8px;
+  }
+  
+  .achievement .modal-body .img img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .achievement .social-links button {
+    margin-right: 10px;
     border: none;
-    border-radius: 5%;
-}
-.nav-bg{
-    background-color: #fff;
-}
-
-.blog .blogpost small{
-    color: #6f34fe;
-    font-size: 1.1rem;
-}
-.blog .blogpost h4,.blogpost a{
-    color: #3f396d;
-    font-weight: 700;
-    margin-top: 1rem;
-    text-decoration: none;
-}
-.blogpost a:hover{
-    color: #fca61f;
-}
-.blog .blogpost .read-more-btn{
-    text-decoration: none;
-    color: #fca61f;
-    font-size: 1.1rem;
-}
-.blog .blogpost .read-more-btn:hover{
-    color: #6f34fe;
-}
-/* styling modal group  */
-.btn-c{
-    margin-left: 94%;
     background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  
+  
+  .achievement .social-links button:hover {
+    color: #007bff;
+  }
+  
+  .contact-form button.c-btn {
+    background-color: #007bff;
+    color: white;
     border: none;
-    color: #fff;
-    font-size: 2rem;
-    margin-top: -3%;
-}
-.btn-c i{
-    color: #fca61f;
-}
-.modal-body .content span{
-    font-size: 1rem;
-}
-.modal-body .content small{
-    font-size: 1rem;
-    color: #6f34fe;
-}
+  }
+  
 /* contact section starts */
 .contact{
     background-color: #f3f3f3;
@@ -384,3 +439,5 @@ footer .link-group a:hover{
     color: #fff;
     animation: pulse 3s infinite;
 }
+
+
